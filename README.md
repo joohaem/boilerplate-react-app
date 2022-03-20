@@ -6,7 +6,7 @@ $ cd FILE_NAME
 $ git pull https://github.com/joohaem/boilerplate-react-app.git
 ```
 
-- edit CRA
+- edit CRA ([Boilerplate Webpack without CRA는?](https://snupi.tistory.com/197))
 - add src folders
 - configure absolute paths (not alias)
 - yarn add react-router-dom
