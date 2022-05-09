@@ -1,4 +1,5 @@
 // import "../src/index.css"; //👈 The app's CSS file goes here
+import { GlobalStyle } from "../src/index";
 
 // npx sb init을 통해 세팅된 값
 export const parameters = {
@@ -18,7 +19,7 @@ export const parameters = {
 export const decorators = [
   (Story, context) => (
     <>
-      {/* <GlobalStyle /> */}
+      <GlobalStyle />
       <Story {...context} />
     </>
   ),
