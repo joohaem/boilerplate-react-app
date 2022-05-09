@@ -12,5 +12,16 @@ export default {
   ],
 };
 
-export const Basic = () => <MyComponent />;
 // export const WithProp = () => <MyComponent prop="value" />;
+export const Basic = () => <MyComponent />;
+
+Basic.parameters = {
+  backgrounds: {
+    values: [
+      { name: "lightBlue", value: "lightBlue" },
+      { name: "gray", value: "#eeeeee" },
+    ],
+  },
+};
+
+Basic.storyName = "Custom";
