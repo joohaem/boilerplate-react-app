@@ -1,21 +1,30 @@
-import MyComponent from "./MyComponent";
+import { Meta, Story } from "@storybook/react";
 
+import MyComponent, { MyComponentProps } from "./MyComponent";
+
+// 스토리북의 폴더
 export default {
   title: "Example/MyComponent",
   component: MyComponent,
   decorators: [
-    (MyComponent: () => JSX.Element) => (
+    (Story: () => JSX.Element) => (
       <div style={{ margin: "3em" }}>
-        <MyComponent />
+        <Story />
       </div>
     ),
   ],
+} as Meta;
+
+// Story 정의
+const Template: Story<MyComponentProps> = (args) => {
+  return <MyComponent {...args} />;
 };
 
-// export const WithProp = () => <MyComponent prop="value" />;
-export const Basic = () => <MyComponent />;
-
-Basic.parameters = {
+export const MyComponentStory1 = Template.bind({});
+MyComponentStory1.args = {
+  text: "",
+};
+MyComponentStory1.parameters = {
   backgrounds: {
     values: [
       { name: "lightBlue", value: "lightBlue" },
@@ -23,5 +32,4 @@ Basic.parameters = {
     ],
   },
 };
-
-Basic.storyName = "Custom";
+MyComponentStory1.storyName = "Custom";
