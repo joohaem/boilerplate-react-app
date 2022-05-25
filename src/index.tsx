@@ -1,9 +1,10 @@
-import App from "App";
 import React from "react";
 import ReactDOM from "react-dom";
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle``;
+import App from "./App";
+
+export const GlobalStyle = createGlobalStyle``;
 
 ReactDOM.render(
   <React.StrictMode>
