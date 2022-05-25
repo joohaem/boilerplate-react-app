@@ -5,8 +5,6 @@ $ git init FILE_NAME
 $ cd FILE_NAME
 // default
 $ git pull https://github.com/joohaem/boilerplate-react-app.git
-// migrate to vite
-$ git pull origin ver_vite
 ```
 
 - edit CRA ([Boilerplate Webpack without CRA는?](https://snupi.tistory.com/197))
