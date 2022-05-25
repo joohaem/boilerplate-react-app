@@ -8,7 +8,7 @@ $ git pull https://github.com/joohaem/boilerplate-react-app.git
 ```
 
 - edit CRA ([Boilerplate Webpack without CRA는?](https://snupi.tistory.com/197))
-- [ver. edit VITE](https://github.com/joohaem/boilerplate-vite.git)
+- [ver. edit VITE](https://github.com/joohaem/boilerplate-vite-react.git)
 - add src folders
 - yarn add react-router-dom axios
 - yarn add typescript @types/node @types/react @types/react-dom @types/jest
