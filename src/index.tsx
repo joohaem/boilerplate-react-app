@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 import { reset } from "styled-reset";
 
 import App from "./App";
+// import { worker } from "./mocks/browser";
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -42,6 +43,10 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 `;
+
+// if (process.env.NODE_ENV === "development") {
+//   worker.start();
+// }
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(

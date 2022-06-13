@@ -23,7 +23,7 @@
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx",
+    "**/*.tsx", "public/mockServiceWorker.js",
   ],
   "exclude": [
     "node_modules"
