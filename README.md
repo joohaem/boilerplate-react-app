@@ -13,7 +13,7 @@ $ git pull https://github.com/joohaem/boilerplate-react-app.git
 - add src folders
 - > yarn add react-router-dom axios
 
-- > yarn add typescript @types/node @types/react @types/react-dom @types/jest
+- > yarn add -D typescript @types/node @types/react @types/react-dom @types/jest
 
 - > yarn add styled-components @types/styled-components styled-reset
 
